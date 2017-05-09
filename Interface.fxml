@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Simon.Controller">
+   <children>
+      <GridPane alignment="CENTER" layoutX="6.0" layoutY="141.0" prefHeight="393.0" prefWidth="784.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="333.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="165.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="btn1" fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" ellipsisString="123" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="1" textFill="TRANSPARENT" visible="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button id="btn2" fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" ellipsisString="...123" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="2" textFill="TRANSPARENT" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="btn3" fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="3" textFill="TRANSPARENT" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="btn4" fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="4" textFill="TRANSPARENT" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <Label fx:id="Title" alignment="CENTER" contentDisplay="CENTER" layoutY="22.0" prefHeight="70.0" prefWidth="450.0" text="Simon" textAlignment="CENTER" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="ScoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="150.0" prefHeight="70.0" prefWidth="450.0" text="Score:" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score" alignment="CENTER" contentDisplay="CENTER" layoutY="210.0" prefWidth="450.0" text="0" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button id="btnStart" fx:id="btnStart" layoutX="135.0" layoutY="130.0" mnemonicParsing="false" onAction="#start" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="Start" textFill="WHITE" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button id="btnMenu" fx:id="btnMenu" layoutX="131.0" layoutY="35.0" mnemonicParsing="false" onAction="#menu" prefHeight="80.0" prefWidth="80.0" stylesheets="@style/style.css" text="Menu" textFill="WHITE" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button id="btnReset" fx:id="btnReset" layoutX="239.0" layoutY="35.0" mnemonicParsing="false" onAction="#reset" prefHeight="80.0" prefWidth="80.0" stylesheets="@style/style.css" text="Reset" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnRetry" fx:id="btnRetry" alignment="CENTER" contentDisplay="RIGHT" layoutX="336.0" layoutY="170.0" mnemonicParsing="false" onAction="#start" prefHeight="100.0" prefWidth="100.0" stylesheets="@style/style.css" text="Retry" textFill="WHITE" visible="false" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="btnLoseMenu" fx:id="btnLoseMenu" alignment="CENTER" layoutX="14.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#menu" prefHeight="100.0" prefWidth="100.0" stylesheets="@style/style.css" text="Menu" textFill="WHITE" visible="false" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="gameOver" alignment="CENTER" layoutY="202.0" prefHeight="17.0" prefWidth="450.0" text="Game over" visible="false" AnchorPane.bottomAnchor="500.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button id="btnExit" fx:id="btnExit" layoutX="135.0" layoutY="130.0" mnemonicParsing="false" onAction="#exit" prefHeight="180.0" prefWidth="180.0" stylesheets="@style/style.css" text="Exit" textFill="WHITE" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

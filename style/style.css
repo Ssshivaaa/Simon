@@ -1,0 +1,131 @@
+.button {
+
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+
+}
+
+.button:disabled{
+    -fx-opacity: 1.0 ;
+}
+
+#btn1 {
+    -fx-background-color: #836FFF;
+}
+
+#btn1:hover {
+    -fx-background-color: #6959CD;
+}
+
+#btn1:pressed {
+    -fx-background-color: #473d8c;
+}
+
+#btn2 {
+    -fx-background-color: #54FF9F;
+}
+
+#btn2:hover {
+    -fx-background-color: #43CD80;
+}
+
+#btn2:pressed {
+    -fx-background-color: #2c8c5a;
+}
+
+#btn3 {
+    -fx-background-color: #4876FF;
+}
+
+#btn3:hover {
+    -fx-background-color: #3A5FCD;
+}
+
+#btn3:pressed {
+    -fx-background-color: #3a468c;
+}
+
+#btn4 {
+    -fx-background-color: #FF8247;
+}
+
+#btn4:hover {
+    -fx-background-color: #cd6743;
+}
+
+#btn4:pressed {
+    -fx-background-color: #af5843;
+}
+
+#btnMenu {
+    -fx-background-color: #81d9ff;
+}
+
+#btnMenu:hover {
+    -fx-background-color: #70a8cd;
+}
+
+#btnMenu:pressed {
+    -fx-background-color: #628faf;
+}
+
+#btnReset {
+    -fx-background-color: #ff7979;
+}
+
+#btnReset:hover {
+    -fx-background-color: #cd6969;
+}
+
+#btnReset:pressed {
+    -fx-background-color: #af5b5b;
+}
+
+#btnStart {
+    -fx-background-color: #9eff63;
+}
+
+#btnStart:hover {
+    -fx-background-color: #75cd5a;
+}
+
+#btnStart:pressed {
+    -fx-background-color: #6baf46;
+}
+
+#btnLoseMenu {
+    -fx-background-color: #81d9ff;
+}
+
+#btnLoseMenu:hover {
+    -fx-background-color: #70a8cd;
+}
+
+#btnLoseMenu:pressed {
+    -fx-background-color: #628faf;
+}
+
+#btnRetry {
+    -fx-background-color: #9eff63;
+}
+
+#btnRetry:hover {
+    -fx-background-color: #75cd5a;
+}
+
+#btnRetry:pressed {
+    -fx-background-color: #6baf46;
+}
+
+#btnExit {
+    -fx-background-color: #ff7068;
+}
+
+#btnExit:hover {
+    -fx-background-color: #cd5d55;
+}
+
+#btnExit:pressed {
+    -fx-background-color: #af584f;
+}
